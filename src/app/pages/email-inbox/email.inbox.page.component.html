@@ -1,0 +1,25 @@
+<div class="page-email-inbox">
+    <nav class="email-inbox-header">
+        <div class="container-fluid email-inbox-header-body">
+            <div class="row">
+                <div class="col-2 col-sm-2 col-md-1 col-lg-1" >
+                     
+                </div>
+                <div class="col-7 col-sm-7 col-md-9 col-lg-9 email-inbox-header-content">
+                    Inbox
+                </div>
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 email-inbox-header-filter">
+                    <a class="btn-fitler-list" (click)="filterEmail(filterStatus)">
+                        <span> Filter </span> 
+                        <img src="./../../../assets/images/icon-arrow-light.png" [ngClass]="filterStatus === 'asc' ? 'up' : (filterStatus === 'desc') ? 'down' : 'up'" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="email-inbox-content" detect-scroll (onScroll)="handleScroll($event)">
+        <app-email-inbox-list-component [DataSource]="emailList"></app-email-inbox-list-component>
+    </div> 
+
+</div>
