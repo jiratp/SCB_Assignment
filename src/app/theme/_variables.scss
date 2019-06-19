@@ -1,0 +1,28 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swa);
+
+$assets-root: '~/assets/';
+$images-root: $assets-root+'images/';
+$fa-font-path: $assets-root+'fontawesome/webfonts';
+
+$font-content: Roboto, sans-serif;
+
+$body-background: #FFFFFF;
+$body-font-size: 14px;
+$body-font-color: #4d545a;
+
+$wrapper-background: #ECEDEF;
+
+$datatable-font-size-title: 16px !important;
+$datatable-font-size-filter: 12px !important;
+
+$content-font-size-sender: 14px !important;
+$content-font-size-subject: 14px !important;
+$content-font-size-description: 14px !important;
+$content-font-size-datetime: 11px !important;
+
+
+$content-font-color-sender: #302f2f;
+$content-font-color-subject: #302f2f;
+$content-font-color-description: #a1a6ac;
+$content-font-color-datetime: #a1a6ac;

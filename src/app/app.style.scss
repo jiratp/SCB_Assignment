@@ -1,0 +1,17 @@
+@import "./theme/variables";
+
+* {
+    /* personal preference */
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: $font-content;
+    background: $body-background;
+    font-size: $body-font-size;
+    color: $body-font-color;
+    line-height: 1.42857143;
+    width: 100%;
+    scroll-behavior: smooth;
+}
