@@ -1,0 +1,5 @@
+<div class="container-fluid mail-item-list">
+    <ng-template ngFor let-dataSourceByItem [ngForOf]="DataSource">
+        <app-email-inbox-item-component [DataSourceByItem]="dataSourceByItem"></app-email-inbox-item-component>
+    </ng-template>
+</div>

@@ -1,0 +1,158 @@
+@import "./../../../theme/variables";
+
+.mail-item{
+    background: #FFFFFF;
+    border-bottom:1px solid rgba(204, 203, 203, 0.644);
+
+    &.no-choose{
+        .mail-item-icon{
+            padding: 0.7em;
+            text-align: center;
+            .icon-name{
+                text-transform: uppercase;
+                color: #FFFFFF;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: red;
+                vertical-align: middle;
+                margin: auto;
+                text-align: center;
+                display: table-cell;
+            }
+        }
+
+        .mail-item-content{
+            .content-from{
+                .content-from-control{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.has-choose {
+        .mail-item-icon{
+            padding: 1.1em;
+            text-align: center;
+            .icon-name{
+                text-transform: uppercase;
+                color: #FFFFFF;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: beige;
+                border: 1px solid #b3afaf;
+                margin: auto;
+                text-align: center;
+                img{
+                    width: 15px;
+                    height: 15px;
+                    margin: 0px auto;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+
+        .mail-item-content{
+            .content-from{
+                .content-from-control{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .mail-item-content{
+        padding: 0.8em;
+        padding-left: 5px;
+        padding-right: 5px;
+       
+
+        .item-content{
+            &.content-from{
+                width: 100%;
+                .content-from-name{
+                    width: 70%;
+                    float: left;
+                    padding-bottom: 0.1em;
+                    span{
+                        font-size: $content-font-size-sender;
+                        color: $content-font-color-sender;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 99%;
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+
+                .content-from-control{
+                    width: 30%;
+                    float: left;
+                    text-align: right;
+
+                    .btn-control-from{
+                        margin-right: 1px;
+                        img{
+                            display: inline-block;
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+
+            &.content-subject{
+                width: 100%;
+                .content-subject-name{
+                    width: 85%;
+                    float: left;
+                    padding-bottom: 0.1em;
+                    span{
+                        font-size: $content-font-size-subject;
+                        color: $content-font-color-subject;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 95%;
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+
+                .content-subject-datetime{
+                    width: 15%;
+                    float: left;
+                    text-align: right;
+                    font-size: $content-font-size-datetime;
+                    color: $content-font-color-datetime;
+                    padding-top: 0.3em;
+                }
+            }
+
+            &.content-description{
+                width: 100%;
+                padding-bottom: 0.1em;
+                span{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 99%;
+                    display: block;
+                    overflow: hidden;
+                    font-size: $content-font-size-description;
+                    color: $content-font-color-description;
+                }
+            }
+
+            .is-read{
+                font-weight: bold;
+            }
+
+            .no-read{
+                font-weight: none;
+            }
+        }
+    }
+}

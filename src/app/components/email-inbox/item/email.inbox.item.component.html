@@ -1,0 +1,44 @@
+
+<div class="row mail-item" [ngClass]="DataSourceByItem.isChoose ? 'has-choose' : 'no-choose'" (click)="onSelectItem(DataSourceByItem)">
+    <div class="col-2 col-sm-2 col-md-1 col-lg-1 mail-item-icon">
+        <div class="icon-name">
+           <span *ngIf="!DataSourceByItem.isChoose">JP</span>
+           <img src="./../../../../assets/images/icon-check-light.png" alt="" *ngIf="DataSourceByItem.isChoose" />
+        </div>
+    </div> 
+    <div class="col-10 col-sm-10 col-md-11 col-lg-11 mail-item-content">
+        <div class="item-content content-from">
+            <div class="content-from-name" [ngClass]="DataSourceByItem.isRead ? 'is-read' : 'no-read'"> 
+                <span> {{DataSourceByItem.from.name}} </span>
+            </div>
+            <div class="content-from-control"> 
+                <a class="btn-control-from control-from-delete">
+                    <img src="./../../../../assets/images/icon-delete-light.png" alt="" />
+                </a>
+
+                <a class="btn-control-from control-from-letter">
+                    <img src="./../../../../assets/images/icon-letter-light.png" alt="" />
+                </a>
+
+                <a class="btn-control-from control-from-flag">
+                    <img src="./../../../../assets/images/icon-flag-light.png" alt="" />
+                </a>
+
+                <a class="btn-control-from control-from-pin">
+                    <img src="./../../../../assets/images/icon-pin-light.png" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="item-content content-subject">
+            <div class="content-subject-name" [ngClass]="DataSourceByItem.isRead ? 'is-read' : 'no-read'"> 
+                <span>{{DataSourceByItem.subject}}</span>    
+            </div>
+            <div class="content-subject-datetime"> {{DataSourceByItem.dateDisplay}} </div>
+        </div>
+        <div class="item-content content-description">
+            <span>
+                    {{DataSourceByItem.body}}
+            </span>
+        </div>
+    </div>
+</div>
