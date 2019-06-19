@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "from" : {
+            "name" : "Now TV",
+            "email" : "nowtv@test.com"
+        },
+        "subject" : "Grab another Pass, you need to be watching this...",
+        "body" : "Oscar winners Sir Anthony Hopkins and Ed Harris join an impressive cast boasting the likes of Thandie Newton, James Marsden and Jeffrey Wright.",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 2,
+        "from" : {
+            "name" : "Investopedia Terms",
+            "email" : "investopedia@test.com"
+        },
+        "subject" : "What is 'Fibonanci Retracement'?",
+        "body" : "Fibonacci retracement is a term used in technical analysis that refers to areas of support (price stops going lower) or resistance (price stops going higher).",
+        "create_date": null,
+        "isRead": true,
+        "isChoose": true,
+        "isPin": false
+    },
+    {
+        "id": 3,
+        "from" : {
+            "name" : "ASICS Greater Manchester Marathon ",
+            "email" : "events@human-race.co.uk"
+        },
+        "subject" : "Your chance to take on the marathon",
+        "body" : "Do you feel inspired to take on one of Europe's most highly regarded and popular marathons?",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 4,
+        "from" : {
+            "name" : "SCB Easy",
+            "email" : "scbeasynet@scb.co.th"
+        },
+        "subject" : "แจ้งเตือนจากแอพ SCB Easy: บริการอัตโนมัติแจ้งเตือนการทำธุรกรรม",
+        "body" : "เรียน จิรัฏฐ์ ปัฐวีวัฒนโชติ ธนาคารขอแจ้งว่า คุณได้เข้าสู่ระบบ แอพ SCB Easy ครั้งล่าสุด เมื่อวันที่ 18 มิ.ย. 2562 เวลา 10:50:52 น. โดยทำธุรกรรมดังนี้",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 5,
+        "from" : {
+            "name" : "Microsoft",
+            "email" : "wwevents@eventscommunication.microsoft.com"
+        },
+        "subject" : "การแจ้งเตือนกิจกรรมของ Microsoft",
+        "body" : "ขอบคุณที่สนใจกิจกรรมของ Microsoft เราขอแจ้งให้ท่านทราบว่าท่านได้ลงทะเบียนเข้าร่วมกิจกรรมต่อไปนี้",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 6,
+        "from" : {
+            "name" : "Ameer",
+            "email" : "Ameer@blockgeeks.com"
+        },
+        "subject" : "EOS - vs - Ethereum - Hmmm",
+        "body" : "Ethereum VS EOS: [The Ultimate Comparison Guide]",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 7,
+        "from" : {
+            "name" : "Medium Daily Digest",
+            "email" : "noreply@medium.com"
+        },
+        "subject" : "“Responsive Environments” published in UX Collective by Masha Safina",
+        "body" : "Today’s highlights Responsive Environments Part I: User Experience in the Creation and Use of Flexible Spaces",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 8,
+        "from" : {
+            "name" : "Books Kinokuniya",
+            "email" : "siamparagon@kinokuniya.com"
+        },
+        "subject" : "Kinokuniya (Thailand) WebStore, Promotion Code for 17-19 June 2019.",
+        "body" : "Special Promotion Code Campaign only 17-19 June 2019, exclusively on Kinokuniya WebStore Thailand.",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 9,
+        "from" : {
+            "name" : "Cloud Native Computing Foundation",
+            "email" : "no-reply@email.cncf.io"
+        },
+        "subject" : "Kubernetes turns 5 and last chance to attend KubeCon + CloudNativeCon Shanghai",
+        "body" : "A Look Back At KubeCon + CloudNativeCon Europe 2019",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    },
+    {
+        "id": 10,
+        "from" : {
+            "name" : "GitHub",
+            "email" : "noreply@github.com"
+        },
+        "subject" : "GitHub Explore today Jun 14",
+        "body" : "Explore code and developers on GitHub today, today, Jun 14.",
+        "create_date": null,
+        "isRead": false,
+        "isChoose": false,
+        "isPin": false
+    }
+]
