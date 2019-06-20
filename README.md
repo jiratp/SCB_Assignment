@@ -16,6 +16,9 @@ Screen 2
 ## My solution from your assignment
 [![my-solution-screen-main](https://github.com/jiratp/scb_assignment/blob/master/readme/my-solution/screen-main.jpg)](https://github.com/jiratp/scb_assignment/blob/master/readme/my-solution/screen-main.jpg)
 
+##github.com
+- https://github.com/jiratp/scb_assignment @branch master
+
 ## Description
 The app provides the look and feels is as close to the visual design
 
