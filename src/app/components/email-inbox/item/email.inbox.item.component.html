@@ -11,14 +11,14 @@
     (pressUp)="onPressUpItem($event, DataSourceByItem)"
     (focusout)="onFocusoutItem()"
 >
-    <div class="col-2 col-sm-2 col-md-1 col-lg-1 mail-item-icon">
+    <div class="col-2 col-sm-1 col-md-1 col-lg-1 mail-item-icon">
         <div class="icon-name error" *ngIf="DataSourceByItem.icon === undefined">
-           <span> ER </span>
+           <span class="icon-name-text"> ER </span>
         </div>
 
 
         <div class="icon-name" *ngIf="DataSourceByItem.icon !== undefined && !DataSourceByItem.isChoose" [style.background]="DataSourceByItem.icon.color">
-           <span *ngIf="DataSourceByItem.icon.type === 'text'">{{DataSourceByItem.icon.source}}</span>
+           <span *ngIf="DataSourceByItem.icon.type === 'text'" class="icon-name-text">{{DataSourceByItem.icon.source}}</span>
            <span *ngIf="DataSourceByItem.icon.type === 'image-base64'">
                <img src="{{DataSourceByItem.icon.source}}" class="img-icon" />
            </span>
@@ -29,7 +29,7 @@
            <img src="./../../../../assets/images/icon-check-light.png" alt="" *ngIf="DataSourceByItem.isChoose" class="img-choose" />
         </div>
     </div> 
-    <div class="col-10 col-sm-10 col-md-11 col-lg-11 mail-item-content">
+    <div class="col-10 col-sm-11 col-md-11 col-lg-11 mail-item-content">
         <div class="item-content content-from">
             <div class="content-from-name" [ngClass]="!DataSourceByItem.isRead ? 'is-read' : 'no-read'"> 
                 <span> {{DataSourceByItem.from.name || '-'}}</span>
