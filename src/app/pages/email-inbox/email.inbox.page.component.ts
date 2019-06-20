@@ -109,4 +109,25 @@ export class PageEmailInboxComponent implements OnInit {
         this.emailList = [];
       });
     }
+
+
+    EmailInboxListCallback(event: any) {
+      let index;
+      if (event !== undefined) {
+        switch (event.component) {
+          case 'choose':
+              index = _.indexOf(this.emailList, event.content);
+              this.emailList[index].isChoose = !event.content.isChoose;
+              break;
+
+          case 'read':
+              index = _.indexOf(this.emailList, event.content);
+              this.emailList[index].isRead = true;
+              break;
+
+          default:
+            break;
+        }
+      }
+    }
 }

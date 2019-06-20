@@ -11,7 +11,7 @@ import { Component, OnInit, Output, Input, EventEmitter, ViewEncapsulation, Host
 
 export class EmailInboxListComponent implements OnInit {
     @Input() public DataSource: any;
-    @Output() action = new EventEmitter();
+    @Output() EmailInboxListCallback = new EventEmitter();
 
 
     constructor( ) {
@@ -19,5 +19,9 @@ export class EmailInboxListComponent implements OnInit {
     }
 
     ngOnInit() { }
+
+    EmailInboxItemCallback (event: any) {
+      this.EmailInboxListCallback.emit(event);
+    }
 
 }
