@@ -6,10 +6,6 @@ import { ReqeustService } from '../../providers/request.service';
 import * as moment from 'moment';
 import * as _ from 'underscore';
 
-// // COMPONENT
-// import { EmailInboxListComponent } from './../../components/email-inbox/list/email.inbox.list.component';
-
-
 @Component({
 // tslint:disable-next-line: component-selector
   selector: 'app-email.inbox.page',
@@ -22,7 +18,7 @@ import * as _ from 'underscore';
 })
 
 export class PageEmailInboxComponent implements OnInit {
-    public filterStatus: any = 'asc';
+    public filterStatus: any = 'desc';
     public currentDate: any = moment();
     public lastDate: any = moment().subtract( 2 , 'month');
     public pageNumber: any = 1;
@@ -82,7 +78,7 @@ export class PageEmailInboxComponent implements OnInit {
           response.forEach(element => {
             const emailObj: any = element;
             emailObj.id = element.id * page;
-            emailObj.create_date = moment(useDate).subtract( (emailObj.id - 3) , 'hours');
+            emailObj.create_date = moment(useDate).subtract( ((emailObj.id - 1) * 1) , 'hours');
             if ( moment().format('L') === emailObj.create_date.format('L')) {
                 emailObj.dateDisplay = emailObj.create_date.format('HH:mm');
             } else {
